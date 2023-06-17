@@ -1,7 +1,7 @@
 tensorflow
 pandas 
 dvc
-mlflow==1.26.1
+mlflow==2.2.2
 notebook
 numpy
 matplotlib

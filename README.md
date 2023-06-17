@@ -66,6 +66,7 @@ open up you local host and port
 - mlflow ui
 
 ### dagshub
+[dagshub](https://dagshub.com/)
 
 MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-DVC-Chicken-Disease-Classification.mlflow 
 MLFLOW_TRACKING_USERNAME=entbappy 
@@ -183,3 +184,20 @@ docker push chickenapp.azurecr.io/chicken:latest
 2. Push the Docker image to Container Registry
 3. Launch the Web App Server in Azure 
 4. Pull the Docker image from the container registry to Web App server and run 
+
+
+
+## About MLflow & DVC
+
+MLflow
+
+ - Its Production Grade
+ - Trace all of your expriements
+ - Logging & taging your model
+
+
+DVC 
+
+ - Its very lite weight for POC only
+ - lite weight expriements tracker
+ - It can perform Orchestration (Creating Pipelines)

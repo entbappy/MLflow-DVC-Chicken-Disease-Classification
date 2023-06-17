@@ -103,10 +103,11 @@ class ConfigurationManager:
 
 
 
-    def get_validation_config(self) -> EvaluationConfig:
+    def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
-            path_of_model=Path("artifacts/training/model.h5"),
-            training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/Chicken-fecal-images",
+            mlflow_uri="https://dagshub.com/entbappy/MLflow-DVC-Chicken-Disease-Classification.mlflow",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE
