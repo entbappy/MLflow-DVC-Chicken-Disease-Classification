@@ -75,14 +75,10 @@ if __name__ == "__main__":
         mlflow.log_metric("mae", mae)
 
         
-        ## For local servers only
-        remote_server_uri = "http://0.0.0.0:1234"
-        mlflow.set_tracking_uri(remote_server_uri)
 
-        
-        ## For remote server only
-        # remote_server_uri = "https://dagshub.com/c17hawke/FSDS_NOV_deepCNNClassifier.mlflow"
-        # mlflow.set_tracking_uri(remote_server_uri)
+        # For remote server only
+        remote_server_uri = "https://dagshub.com/entbappy/MLflow-DVC-Chicken-Disease-Classification.mlflow"
+        mlflow.set_tracking_uri(remote_server_uri)
 
 
 
